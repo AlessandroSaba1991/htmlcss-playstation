@@ -18,10 +18,6 @@
 
 }
 
-
-
-
-
 /* #endregion Color */
 
 /* #region Common */
@@ -33,6 +29,15 @@ body{
 /* #endregion Common */
 
 /* #region Utility */
+
+.hidden{
+    display: none;
+}
+
+.circle_link{
+    width: 6px;
+    height: 6px;
+}
 
 .h_50{
     height: 50px;
@@ -115,6 +120,46 @@ body{
 /* #endregion Bg */
 
 /* #endregion Utility */
+
+
+
+/* #region Header */
+
+/* #region Top */
+
+.img_top_header{
+    width: 100px;
+}
+
+/* #endregion Top */
+
+/* #region Bottom */
+
+.img_card_dropdown{
+    width: 70px;
+}
+/* #endregion Bottom */
+
+/* #endregion Header */
+
+/* #region Hover */
+
+.nav-link:hover>.img_toggler{
+    display: none;
+}
+
+.nav-link:hover>.img_toggler.hidden{
+    display: block;
+}
+
+.nav-link:focus>.img_toggler{
+    transform: rotate(180deg);
+}
+
+
+
+
+/* #endregion Hover */
 
 
 
