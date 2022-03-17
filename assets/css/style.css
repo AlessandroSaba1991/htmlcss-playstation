@@ -1,0 +1,127 @@
+/* #region Color */
+
+:root{ 
+
+    --text_primary:rgba(6, 117, 207, 1);
+    --text_secondary:rgba(115, 115, 115, 1);
+    --bg_top_header: black;
+    --bg_navbar: white;
+    --bg_network:rgba(22, 28, 59, 1);
+    --bg_plus:rgba(190, 188, 187, 1);
+    --bg_new_exit:rgba(31, 31, 31, 1);
+    --bg_footer: rgba(0, 67, 156, 1);
+    --bg_btn_log:rgba(54, 54, 54, 1);    
+    --bg_btn_buy:rgba(205, 61, 15, 1); 
+    --bg_btn_explore:rgba(217, 218, 220, 1);
+    --bg_btn_network:rgba(229, 229, 229, 1);
+    --bg_btn_info: rgba(45, 100, 230, 1);
+
+}
+
+
+
+
+
+/* #endregion Color */
+
+/* #region Common */
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* #endregion Common */
+
+/* #region Utility */
+
+.h_50{
+    height: 50px;
+}
+
+.h_100{
+    height: 100px;
+}
+
+.h_200{
+    height: 200px;
+}
+
+.h_300{
+    height: 300px;
+}
+
+.h_600{
+    height: 600px;
+}
+
+/* #region Text */
+
+.text_primary{
+    color: var(--text_primary);
+}
+
+.text_secondary{
+    color: var(--text_secondary);
+}
+
+/* #endregion Text */
+
+/* #region Bg */
+
+.bg_top_header{
+    background-color: var(--bg_top_header);
+}
+
+.bg_nav{
+    background-color: var(--bg_navbar);
+}
+
+.bg_footer{
+    background-color: var(--bg_footer);
+}
+
+.bg_network{
+    background-color: var(--bg_network);
+}
+
+.bg_new_exit{
+    background-color: var(--bg_new_exit);
+}
+
+.bg_plus{
+    background-color: var(--bg_plus);
+}
+
+.bg_btn_log{
+    background-color: var(--bg_btn_log);
+}
+
+.bg_btn_buy{
+    background-color: var(--bg_btn_buy);
+}
+
+.bg_btn_explore{
+    background-color: var(--bg_btn_explore);
+}
+
+.bg_btn_network{
+    background-color: var(--bg_btn_network);
+}
+
+.bg_btn_info{
+    background-color: var(--bg_btn_info);
+}
+
+/* #endregion Bg */
+
+/* #endregion Utility */
+
+
+
+
+
+
+
+
+
+
