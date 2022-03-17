@@ -39,6 +39,14 @@ body{
     height: 6px;
 }
 
+.rounded_3{
+    border-radius: 1.5rem;
+}
+
+.border_primary{
+    border-color: var(--bg_btn_info)!important;
+}
+
 .h_50{
     height: 50px;
 }
@@ -128,7 +136,7 @@ body{
 /* #region Top */
 
 .img_top_header{
-    width: 100px;
+    width: 80px;
 }
 
 /* #endregion Top */
@@ -141,6 +149,20 @@ body{
 /* #endregion Bottom */
 
 /* #endregion Header */
+
+/* #region Main */
+
+.banner_returnal{
+    background-image: url("../img/jumbo-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.card_slider_img{
+    width: 120px;
+}
+/* #endregion Main */
 
 /* #region Hover */
 
