@@ -1,150 +1,151 @@
 /* #region Color */
 
-:root{ 
-
-    --text_primary:rgba(6, 117, 207, 1);
-    --text_secondary:rgba(115, 115, 115, 1);
-    --bg_top_header: black;
-    --bg_navbar: white;
-    --bg_now:rgba(22, 28, 59, 1);
-    --bg_plus:rgba(190, 188, 187, 1);
-    --bg_new_exit:rgba(31, 31, 31, 1);
-    --bg_footer: rgba(0, 67, 156, 1);
-    --bg_btn_log:rgba(54, 54, 54, 1);    
-    --bg_btn_buy:rgba(205, 61, 15, 1); 
-    --bg_btn_explore:rgba(217, 218, 220, 1);
-    --bg_btn_now:rgba(229, 229, 229, 1);
-    --bg_btn_info: rgba(45, 100, 230, 1);
-
+:root {
+  --text_primary: rgba(6, 117, 207, 1);
+  --text_secondary: rgba(115, 115, 115, 1);
+  --bg_top_header: black;
+  --bg_navbar: white;
+  --bg_now: rgba(22, 28, 59, 1);
+  --bg_plus: rgba(190, 188, 187, 1);
+  --bg_new_exit: rgba(31, 31, 31, 1);
+  --bg_footer: rgba(0, 67, 156, 1);
+  --bg_btn_log: rgba(54, 54, 54, 1);
+  --bg_btn_buy: rgba(205, 61, 15, 1);
+  --bg_btn_explore: rgba(217, 218, 220, 1);
+  --bg_btn_now: rgba(229, 229, 229, 1);
+  --bg_btn_info: rgba(45, 100, 230, 1);
 }
 
 /* #endregion Color */
 
 /* #region Common */
 
-body{
-    font-family: Arial, Helvetica, sans-serif; 
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* #endregion Common */
 
 /* #region Utility */
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
-.circle_link{
-    width: 6px;
-    height: 6px;
+.circle_link {
+  width: 6px;
+  height: 6px;
 }
 
-.rounded_3{
-    border-radius: 1.5rem;
+.rounded_3 {
+  border-radius: 1.5rem;
 }
 
-.border_primary{
-    border-color: var(--bg_btn_info)!important;
+.border_primary {
+  border-color: var(--bg_btn_info) !important;
 }
 
-.h_50{
-    height: 50px;
+.container_80 {
+  max-width: 540px;
+  margin: 0 auto;
 }
 
-.h_100{
-    height: 100px;
+.h_50 {
+  height: 50px;
 }
 
-.h_200{
-    height: 200px;
+.h_100 {
+  height: 100px;
 }
 
-.h_300{
-    height: 300px;
+.h_200 {
+  height: 200px;
 }
 
-.h_600{
-    height: 600px;
+.h_300 {
+  height: 300px;
+}
+
+.h_600 {
+  height: 600px;
 }
 
 /* #region Text */
 
-.text_primary{
-    color: var(--text_primary);
+.text_primary {
+  color: var(--text_primary);
 }
 
-.text_secondary{
-    color: var(--text_secondary);
+.text_secondary {
+  color: var(--text_secondary);
 }
 
 /* #endregion Text */
 
 /* #region Bg */
 
-.bg_top_header{
-    background-color: var(--bg_top_header);
+.bg_top_header {
+  background-color: var(--bg_top_header);
 }
 
-.bg_nav{
-    background-color: var(--bg_navbar);
+.bg_nav {
+  background-color: var(--bg_navbar);
 }
 
-.bg_footer{
-    background-color: var(--bg_footer);
+.bg_footer {
+  background-color: var(--bg_footer);
 }
 
-.bg_now{
-    background-color: var(--bg_now);
+.bg_now {
+  background-color: var(--bg_now);
 }
 
-.bg_new_exit{
-    background-color: var(--bg_new_exit);
+.bg_new_exit {
+  background-color: var(--bg_new_exit);
 }
 
-.bg_plus{
-    background-color: var(--bg_plus);
+.bg_plus {
+  background-color: var(--bg_plus);
 }
 
-.bg_btn_log{
-    background-color: var(--bg_btn_log);
+.bg_btn_log {
+  background-color: var(--bg_btn_log);
 }
 
-.bg_btn_buy{
-    background-color: var(--bg_btn_buy);
+.bg_btn_buy {
+  background-color: var(--bg_btn_buy);
 }
 
-.bg_btn_explore{
-    background-color: var(--bg_btn_explore);
+.bg_btn_explore {
+  background-color: var(--bg_btn_explore);
 }
 
-.bg_btn_now{
-    background-color: var(--bg_btn_now);
+.bg_btn_now {
+  background-color: var(--bg_btn_now);
 }
 
-.bg_btn_info{
-    background-color: var(--bg_btn_info);
+.bg_btn_info {
+  background-color: var(--bg_btn_info);
 }
 
 /* #endregion Bg */
 
 /* #endregion Utility */
 
-
-
 /* #region Header */
 
 /* #region Top */
 
-.img_top_header{
-    width: 80px;
+.img_top_header {
+  width: 80px;
 }
 
 /* #endregion Top */
 
 /* #region Bottom */
 
-.img_card_dropdown{
-    width: 70px;
+.img_card_dropdown {
+  width: 70px;
 }
 /* #endregion Bottom */
 
@@ -152,65 +153,91 @@ body{
 
 /* #region Main */
 .banner_it_takes_2,
-.banner_returnal{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+.banner_returnal {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
-.banner_returnal{
-    background-image: url("../img/jumbo-bg.png");
+.banner_returnal {
+  background-image: url("../img/jumbo-bg.png");
 }
 
-.banner_it_takes_2{
-    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+.banner_it_takes_2 {
+  background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
 }
 
 .img_card_returnal,
 .img_card_it_takes_2,
-.card_slider_img,
 .img_card_ps_plus,
-.img_card_ps_now{
-    width: 60%;
+.img_card_ps_now {
+  width: 60%;
+}
+
+.card_slider_img {
+  width: 100%;
 }
 
 .title {
-    font-size: calc(1.525rem + 3.3vw);
-  }
+  font-size: calc(1.525rem + 3.3vw);
+}
 
-  @media (min-width: 992px) {
-    .title {
-      font-size: 2.5rem;
-    }
+@media screen and (min-width: 768px) {
+  .card_slider_img {
+    width: 60%;
   }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
 
 /* #endregion Main */
 
 /* #region Hover */
 
-.nav-link:hover>.img_toggler{
-    display: none;
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
 }
 
-.nav-link:hover>.img_toggler.hidden{
-    display: block;
+.dropdown-toggle::after {
+  border: none;
+  font-size: 9px!important;
+  margin-left: 0.5rem;
+  color: gray;
+  font: var(--fa-font-solid);
+  content: "\f078";
 }
 
-.nav-link:focus>.img_toggler{
-    transform: rotate(180deg);
+.dropdown-toggle.show::after {
+  content: "\f077";
 }
 
+.card_dropdown:hover{
+    box-shadow: 0 0 8px 0px lightgrey;
+}
 
+.btn.bg_btn_log{
 
+}
+
+.bg_btn_buy:hover{
+    box-shadow: inset 0 0 white;
+}
 
 /* #endregion Hover */
 
 
+/*     <div class="img_toggler ms-2">
+                                    <img src="./assets/img/chevron-down-solid.svg" alt="" class="img-fluid" width="10">
+                                </div>
+                                <!-- /.img_toggler -->
 
-
-
-
-
-
-
-
+                                <div class="img_toggler ms-2 hidden">
+                                    <img src="./assets/img/chevron-down-solid-hover.svg" alt="" class="img-fluid"
+                                        width="10">
+                                </div>
+                                <!-- /.img_toggler --> */
