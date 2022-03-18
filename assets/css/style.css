@@ -6,14 +6,14 @@
     --text_secondary:rgba(115, 115, 115, 1);
     --bg_top_header: black;
     --bg_navbar: white;
-    --bg_network:rgba(22, 28, 59, 1);
+    --bg_now:rgba(22, 28, 59, 1);
     --bg_plus:rgba(190, 188, 187, 1);
     --bg_new_exit:rgba(31, 31, 31, 1);
     --bg_footer: rgba(0, 67, 156, 1);
     --bg_btn_log:rgba(54, 54, 54, 1);    
     --bg_btn_buy:rgba(205, 61, 15, 1); 
     --bg_btn_explore:rgba(217, 218, 220, 1);
-    --bg_btn_network:rgba(229, 229, 229, 1);
+    --bg_btn_now:rgba(229, 229, 229, 1);
     --bg_btn_info: rgba(45, 100, 230, 1);
 
 }
@@ -93,8 +93,8 @@ body{
     background-color: var(--bg_footer);
 }
 
-.bg_network{
-    background-color: var(--bg_network);
+.bg_now{
+    background-color: var(--bg_now);
 }
 
 .bg_new_exit{
@@ -117,8 +117,8 @@ body{
     background-color: var(--bg_btn_explore);
 }
 
-.bg_btn_network{
-    background-color: var(--bg_btn_network);
+.bg_btn_now{
+    background-color: var(--bg_btn_now);
 }
 
 .bg_btn_info{
@@ -151,17 +151,39 @@ body{
 /* #endregion Header */
 
 /* #region Main */
-
+.banner_it_takes_2,
 .banner_returnal{
-    background-image: url("../img/jumbo-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 }
 
-.card_slider_img{
-    width: 120px;
+.banner_returnal{
+    background-image: url("../img/jumbo-bg.png");
 }
+
+.banner_it_takes_2{
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+}
+
+.img_card_returnal,
+.img_card_it_takes_2,
+.card_slider_img,
+.img_card_ps_plus,
+.img_card_ps_now{
+    width: 60%;
+}
+
+.title {
+    font-size: calc(1.525rem + 3.3vw);
+  }
+
+  @media (min-width: 992px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+
 /* #endregion Main */
 
 /* #region Hover */
