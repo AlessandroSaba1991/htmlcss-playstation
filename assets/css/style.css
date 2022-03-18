@@ -28,10 +28,6 @@ body {
 
 /* #region Utility */
 
-.hidden {
-  display: none;
-}
-
 .circle_link {
   width: 6px;
   height: 6px;
@@ -45,32 +41,20 @@ body {
   border-color: var(--bg_btn_info) !important;
 }
 
-.container_80 {
+.container_540 {
   max-width: 540px;
   margin: 0 auto;
-}
-
-.h_50 {
-  height: 50px;
-}
-
-.h_100 {
-  height: 100px;
-}
-
-.h_200 {
-  height: 200px;
-}
-
-.h_300 {
-  height: 300px;
 }
 
 .h_600 {
   height: 600px;
 }
 
-/* #region Text */
+.title {
+  font-size: calc(1.525rem + 3.3vw);
+}
+
+/* #region Text color */
 
 .text_primary {
   color: var(--text_primary);
@@ -80,7 +64,7 @@ body {
   color: var(--text_secondary);
 }
 
-/* #endregion Text */
+/* #endregion Text color */
 
 /* #region Bg */
 
@@ -110,18 +94,22 @@ body {
 
 .bg_btn_log {
   background-color: var(--bg_btn_log);
+  transition: all 500ms;
 }
 
 .bg_btn_buy {
   background-color: var(--bg_btn_buy);
+  transition: all 500ms;
 }
 
 .bg_btn_explore {
   background-color: var(--bg_btn_explore);
+  transition: all 500ms;
 }
 
 .bg_btn_now {
   background-color: var(--bg_btn_now);
+  transition: all 500ms;
 }
 
 .bg_btn_info {
@@ -144,14 +132,35 @@ body {
 
 /* #region Bottom */
 
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  font-size: 9px !important;
+  margin-left: 0.5rem;
+  color: gray;
+  font: var(--fa-font-solid);
+  content: "\f078";
+}
+
+.dropdown-toggle.show::after {
+  content: "\f077";
+}
+
 .img_card_dropdown {
   width: 70px;
+  transition: all 500ms;
 }
+
 /* #endregion Bottom */
 
 /* #endregion Header */
 
 /* #region Main */
+
 .banner_it_takes_2,
 .banner_returnal {
   background-size: cover;
@@ -174,17 +183,77 @@ body {
   width: 60%;
 }
 
+.img_slider {
+  transition: all 500ms;
+}
+
+.card_slider {
+  border-bottom: 2px solid transparent;
+  transition: all 300ms;
+}
+
 .card_slider_img {
   width: 100%;
 }
 
-.title {
-  font-size: calc(1.525rem + 3.3vw);
+/* #endregion Main */
+
+/* #region Hover */
+
+.dropdown-toggle::after:hover{
+    color: var(--text_primary);
 }
+
+.card_dropdown:hover {
+  box-shadow: 0 0 8px 0px lightgrey;
+}
+
+.btn.bg_btn_log:hover {
+  box-shadow: inset 0 0 0 2px white;
+}
+
+.bg_btn_buy:hover {
+  box-shadow: inset 0 0 0 2px black;
+}
+
+.bg_btn_explore:hover {
+  box-shadow: inset 0 0 0 2px red;
+}
+
+.bg_btn_now:hover {
+  box-shadow: inset 0 0 0 2px black;
+}
+
+.bg_btn_info:hover {
+  box-shadow: inset 0 0 0 2px white;
+  border-color: black;
+}
+
+.img_slider:hover {
+  transform: translateY(-20px);
+}
+
+.card_slider:hover {
+  opacity: 1 !important;
+  border-bottom: 2px solid var(--bg_btn_info);
+}
+
+.a_card_slider:focus .card_slider {
+  opacity: 1 !important;
+  border-bottom: 2px solid var(--bg_btn_info);
+}
+
+/* #endregion Hover */
+
+/* #region Media */
 
 @media screen and (min-width: 768px) {
   .card_slider_img {
     width: 60%;
+  }
+
+  .card_slider_text{
+      height: 72px;
   }
 }
 
@@ -192,52 +261,10 @@ body {
   .title {
     font-size: 2.5rem;
   }
+
+  .card_slider_text{
+    height: 48px;
+}
 }
 
-/* #endregion Main */
-
-/* #region Hover */
-
-.dropdown-toggle {
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-toggle::after {
-  border: none;
-  font-size: 9px!important;
-  margin-left: 0.5rem;
-  color: gray;
-  font: var(--fa-font-solid);
-  content: "\f078";
-}
-
-.dropdown-toggle.show::after {
-  content: "\f077";
-}
-
-.card_dropdown:hover{
-    box-shadow: 0 0 8px 0px lightgrey;
-}
-
-.btn.bg_btn_log{
-
-}
-
-.bg_btn_buy:hover{
-    box-shadow: inset 0 0 white;
-}
-
-/* #endregion Hover */
-
-
-/*     <div class="img_toggler ms-2">
-                                    <img src="./assets/img/chevron-down-solid.svg" alt="" class="img-fluid" width="10">
-                                </div>
-                                <!-- /.img_toggler -->
-
-                                <div class="img_toggler ms-2 hidden">
-                                    <img src="./assets/img/chevron-down-solid-hover.svg" alt="" class="img-fluid"
-                                        width="10">
-                                </div>
-                                <!-- /.img_toggler --> */
+/* #endregion Media */
