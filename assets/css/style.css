@@ -24,6 +24,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
+
 /* #endregion Common */
 
 /* #region Utility */
@@ -51,7 +56,7 @@ body {
 }
 
 .title {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: calc(2rem + 2.5vw);
 }
 
 /* #region Text color */
@@ -200,8 +205,8 @@ body {
 
 /* #region Hover */
 
-.dropdown-toggle::after:hover{
-    color: var(--text_primary);
+.dropdown-toggle::after:hover {
+  color: var(--text_primary);
 }
 
 .card_dropdown:hover {
@@ -247,24 +252,38 @@ body {
 
 /* #region Media */
 
+@media screen and (min-width: 576px) {
+  .title {
+    font-size: calc(1.5rem + 2.5vw);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card_slider_img {
     width: 60%;
   }
 
-  .card_slider_text{
-      height: 72px;
+  .card_slider_text {
+    height: 72px;
   }
-}
 
-@media (min-width: 992px) {
   .title {
-    font-size: 2.5rem;
+    font-size: calc(1.3rem + 2.5vw);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    font-size:calc(1.2rem + 1.3vw);
   }
 
-  .card_slider_text{
+  .lead{
+    font-size: calc(0.8rem + 0.5vw);
+  }
+
+  .card_slider_text {
     height: 48px;
-}
+  }
 }
 
 /* #endregion Media */
